@@ -1,0 +1,118 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #0a070e;
+}
+
+.title {
+    font-family: "Mooli";
+    font-size: 2em;
+    color:rgb(220, 182, 255);
+    position: absolute;
+    top: 20%;
+
+    &.ratio {
+        top: 45%;
+        font-size: 3em;
+        visibility: hidden;
+    }
+}
+
+.bpm {
+    font-family: "montserrat";
+    font-size: 1.5em;
+    color:rgb(220, 182, 255);
+    position: absolute;
+    top: 36%;
+}
+
+input[type="range"] {
+    position: absolute;
+    top: 33%;
+    width: 25%;
+    margin: 10px 0;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+
+    &::-webkit-slider-runnable-track {
+        background: #b78aff;
+        margin-top: -1px;
+        border-radius: 15px;
+        height: 10px;
+    }
+
+    &::-webkit-slider-thumb{
+        height: 15px;
+        width: 15px;
+        border-radius: 15px;
+        background: #731efc;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -2.5px;
+    }
+
+    &.slider1 {
+        top:70%;
+        left: 10%;
+        visibility: hidden;
+    }
+
+    &.slider2 {
+        visibility: hidden;
+        top: 70%;
+        left: 65%;
+    }
+}
+
+.ratio1, .ratio2 {
+    font-family: "Mooli";
+    font-size: 1.5em;
+    color:rgb(220, 182, 255);
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+
+    &.ratio1 {
+        top: 66%;
+        left: 21.5%;
+    }
+
+    &.ratio2 {
+        top: 66%;
+        left: 76.5%;
+    }
+}
+
+.center {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start {
+    position: absolute;
+    top: 92%;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    height: 5%;
+    width: 8%;
+    background: #5400fd;
+    color: #e7d8ff;
+    font-family: "montserrat";
+    font-size: 1.5em;
+}
+
+.switch-container {
+    position: absolute;
+    top: 85%;
+}
+

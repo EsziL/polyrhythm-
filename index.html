@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polyrythms</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="center">
+            <h1 class="title">Polyrythms</h1>
+
+            <h1 class="bpm">BPM: 120</h1>
+            <input type="range" class="slider" min="1" max="400" value="120">
+            <button class="start">Start</button>
+            
+            <h1 class="title ratio">Ratio</h1>
+            <input type="range" class="slider1" min="1" max="100" value="2">
+            <input type="range" class="slider2" min="1" max="100" value="3">
+            <h1 class="ratio1">2</h1>
+            <h1 class="ratio2">3</h1>
+
+            <div class="switch-container">
+                <e-switch class="poly" default="false"></e-switch>
+            </div>
+        </div>
+        
+        <script src="switches.js"></script>
+        <script src="script.js"></script>
+        <script>
+            importGoogleFonts(["Mooli", "Montserrat"]);
+        </script>
+    </body>
+</html>
